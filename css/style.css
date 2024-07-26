@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+:root{
+    --main-bg-col:black;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a:hover,button:hover{
+    background-color:green;
+    color: aliceblue;
+    font-weight: bold;
+}
+header{
+    font-family: "Abel", sans-serif;
+    display: flex;
+    background-color:var(--main-bg-col);
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+header nav ul{
+height: 10vh;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding:10px;
+}
+header nav ul li{
+padding:23px;
+}
+.container{
+    min-height: calc(100vh - 22vh);
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+}
+.search{
+margin: 0 16px 0 50px;
+}
+.search input[type="text"] {
+    width: 500px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.cart{
+    background-color:aliceblue;
+    max-width: 78vw;
+    margin-top: 20px;
+    margin-left: 194px;
+    margin-bottom: 20px;
+    overflow: scroll;
+    
+}
+.cart h2{
+    margin: 0px auto;
+    width: 10vw;
+}
+.cart-items{
+    display:inline-flex;
+    flex-direction: column;
+    margin-left: 32px;
+}
+.cart-items img{
+    margin: 20px  0px 10px 0px;
+}
+.slider{
+    overflow: hidden;
+    margin:12px auto;
+    width: 80vw;
+}
+footer{
+font-family: "Anton SC", sans-serif;
+background-color: var(--main-bg-col);
+color: white;
+height: 12vh;
+}
